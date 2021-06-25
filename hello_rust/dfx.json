@@ -1,0 +1,11 @@
+{
+    "version": 1,
+    "canisters": {
+        "hello_rust": {
+            "type": "custom",
+            "candid": "src/hello_rust.did",
+            "wasm": "main.wasm",
+            "build": "rustc +nightly --target wasm32-unknown-unknown -O src/main.rs"
+        }
+    }
+}
